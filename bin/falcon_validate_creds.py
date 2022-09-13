@@ -26,4 +26,7 @@ if args.base == "auto":
 else:
   falcon = APIHarness(client_id=CLIENTID, client_secret=CLIENTSECRET, base_url=CLIENTBASE)
 
-falcon.authenticate()
+if falcon.authenticate():
+    sys.exit(0)
+else:
+    sys.exit(1)
