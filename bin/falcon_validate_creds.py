@@ -1,4 +1,5 @@
 # flake8: noqa=W605  pylint: disable=W1401
+import sys
 from argparse import ArgumentParser, RawTextHelpFormatter
 try:
     from falconpy import APIHarness
