@@ -1,5 +1,7 @@
 # falconpy-tools
-Collection of tools to use with falonpy SDK
+Collection of tools to use with CrowdStrike falonpy SDK
+
+For CrowdStrike Cloud Workload Protection: https://github.com/cs-shadowbq/falcon-cwp-tools
 
 ## Requirements
 
