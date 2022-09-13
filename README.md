@@ -75,7 +75,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ### `falcon_download_sensor.py`
 
 ```
-python3 download_sensor.py -k $FALCON_CLIENT_ID -s $FALCON_CLIENT_SECRET -b $FALCON_BASE_URL -o ubuntu
+python3 falcon_download_sensor.py -k $FALCON_CLIENT_ID -s $FALCON_CLIENT_SECRET -b $FALCON_BASE_URL -o ubuntu
 ╒══════════════════════════════════════╤════════╤══════════════╤══════════════════════════╤════════════╕
 │ Name                                 │ OS     │ OS Version   │ Release Date             │ Version    │
 ╞══════════════════════════════════════╪════════╪══════════════╪══════════════════════════╪════════════╡
