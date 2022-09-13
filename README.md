@@ -38,3 +38,36 @@ $ python3 ./falcon_validate_creds.py -k $BAD_CLIENT_ID -s $BAD_CLIENT_SECRET
 $ echo $?
 1
 ```
+
+### `falcon_debug.py`
+
+```
+$ python3 falcon_debug.py
+
+,---.     |                   ,--.      |
+|__. ,---.|    ,---.,---.,---.|   |,---.|---..   .,---.
+|    ,---||    |    |   ||   ||   ||---'|   ||   ||   |
+`    `---^`---'`---'`---'`   '`--' `---'`---'`---'`---|
+                                                  `---'
+     CrowdStrike Python 3 Console Debug (not iPython)
+          * Customized for BaseURL access *
+
+This shell-like interface allows for quick learning,
+demoing, and prototyping of API operations using
+the CrowdStrike FalconPy SDK and Python 3.
+
+Please type help() to learn more.
+                         |
+     _____________   __ -+- _____________
+     \_____     /   /_ \ |   \     _____/
+       \_____   \____/  \____/    _____/
+         \_____    FalconPy      _____/
+           \___________  ___________/
+                     /____\
+
+Python 3.10.7 (main, Sep 12 2022, 19:40:04) [GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> DEBUG_TOKEN
+'(..snip..)ALSKDJLASKDJLASKJDLKASJDLKASJDLKJASDLKJASLDKJASLKDJASLKDJLASKDJLASKJDLKASJDM'
+```
