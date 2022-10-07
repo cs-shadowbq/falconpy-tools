@@ -8,7 +8,7 @@ For CrowdStrike Cloud Workload Protection: https://github.com/cs-shadowbq/falcon
 [FalconPy SDK](https://github.com/CrowdStrike/falconpy). These can be installed via pip:
 
 ```shell
-$ python3 -m pip install crowdstrike-falconpy
+$ python3 -m pip install crowdstrike-falconpy tabulate
 ```
 
 ### Optional
