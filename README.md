@@ -77,6 +77,45 @@ Type "help", "copyright", "credits" or "license" for more information.
 ### `falcon_download_sensor.py`
 
 ```
+usage: falcon_download_sensor.py [-h] -k KEY -s SECRET [-b BASE] [-a] [-d] [-c COMMAND] [-o OS] [-v OSVER] [-n FILENAME] [-f FORMAT]
+
+CrowdStrike Falcon Sensor Download utility.
+
+            CrowdStrike Falcon
+ _______                               ______                        __                __
+|   _   .-----.-----.-----.-----.----.|   _  \ .-----.--.--.--.-----|  .-----.---.-.--|  |
+|   1___|  -__|     |__ --|  _  |   _||.  |   \|  _  |  |  |  |     |  |  _  |  _  |  _  |
+|____   |_____|__|__|_____|_____|__|  |.  |    |_____|________|__|__|__|_____|___._|_____|
+|:  1   |                             |:  1    /
+|::.. . |                             |::.. . /                 - jshcodes@CrowdStrike
+`-------'                             `------'
+
+This example requires the crowdstrike-falconpy (0.6.2+) and tabulate packages.
+
+Required API Scope - Sensor Download: READ
+
+options:
+  -h, --help            show this help message and exit
+  -k KEY, --key KEY     CrowdStrike API Key
+  -s SECRET, --secret SECRET
+                        CrowdStrike API Secret
+  -b BASE, --base BASE  CrowdStrike base URL for Gov Clouds
+  -a, --all             Show all columns / Download all versions
+  -d, --download        Shortcut for '--command download'
+  -c COMMAND, --command COMMAND
+                        Command to perform. (list or download, defaults to list)
+  -o OS, --os OS        Sensor operating system
+  -v OSVER, --osver OSVER
+                        Sensor operating system version
+  -n FILENAME, --filename FILENAME
+                        Name to use for downloaded file
+  -f FORMAT, --format FORMAT
+                        Table format to use for display.
+                        (plain, simple, github, grid, fancy_grid, pipe, orgtbl, jira, presto,
+                        pretty, psql, rst, mediawiki, moinmoin, youtrack, html, unsafehtml,
+                        latext, latex_raw, latex_booktabs, latex_longtable, textile, tsv)
+
+
 python3 falcon_download_sensor.py -k $FALCON_CLIENT_ID -s $FALCON_CLIENT_SECRET -b $FALCON_BASE_URL -o ubuntu
 ╒══════════════════════════════════════╤════════╤══════════════╤══════════════════════════╤════════════╕
 │ Name                                 │ OS     │ OS Version   │ Release Date             │ Version    │
@@ -95,4 +134,7 @@ python3 falcon_download_sensor.py -k $FALCON_CLIENT_ID -s $FALCON_CLIENT_SECRET 
 ├──────────────────────────────────────┼────────┼──────────────┼──────────────────────────┼────────────┤
 │ falcon-sensor_6.37.0-13402_amd64.deb │ Debian │ 9/10/11      │ 2022-03-24T22:06:59.917Z │ 6.37.13402 │
 ╘══════════════════════════════════════╧════════╧══════════════╧══════════════════════════╧════════════╛
+
+python3 falcon_download_sensor.py -k $FALCON_CLIENT_ID -s $FALCON_CLIENT_SECRET -o windows -d
+Downloading Falcon Sensor for Windows version 6.46.16008
 ```
