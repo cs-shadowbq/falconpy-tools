@@ -1,4 +1,13 @@
 # falconpy-tools
+```
+    ___       _                                                     _       
+   / __)     | |                                     _             | |      
+ _| |__ _____| | ____ ___  ____  ____  _   _ _____ _| |_ ___   ___ | |  ___ 
+(_   __|____ | |/ ___) _ \|  _ \|  _ \| | | (_____|_   _) _ \ / _ \| | /___)
+  | |  / ___ | ( (__| |_| | | | | |_| | |_| |       | || |_| | |_| | ||___ |
+  |_|  \_____|\_)____)___/|_| |_|  __/ \__  |        \__)___/ \___/ \_|___/ 
+                                |_|   (____/                                
+```
 Collection of tools to use with CrowdStrike falonpy SDK
 
 For CrowdStrike Cloud Workload Protection: https://github.com/cs-shadowbq/falcon-cwp-tools
